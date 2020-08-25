@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Links</title>
+  </head>
+  <body>
+    <h1>HTML Links - Hyperlinks</h1>
+    <p>
+        HTML links are hyperlinks.You can click on a link and jump to another document. <br>
+        Note: A link does not have to be text. A link can be an image or any other HTML element! <br>
+    <hr>
+        <h2>HTML Links - Syntax</h2>
+        "a href="url">link text /a" <br>
+        The most important attribute of the "a" element is the href attribute, which indicates the link's destination. <br>
+        <br>
+        By default, links will appear as follows in all browsers:<br>
+            An unvisited link is underlined and blue <br>
+            A visited link is underlined and purple <br>
+                An active link is underlined and red <br>
+    
+    <hr>
+
+       <h2> HTML Links - The target Attribute </h2>
+            By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link. <br>
+            The target attribute specifies where to open the linked document.<br>
+            The target attribute can have one of the following values:<br>
+            _self - Default. Opens the document in the same window/tab as it was clicked<br>
+            _blank - Opens the document in a new window or tab<br>
+            _parent - Opens the document in the parent frame<br>
+            _top - Opens the document in the full body of the window<br>
+
+    <hr>
+
+        <h2>Absolute URLs vs. Relative URLs</h2>
+            Both examples above are using an absolute URL (a full web address) in the href attribute. <br>
+            A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part):<br>
+            <h2>Absolute URLs</h2>
+                <p>a "href=https://www.w3.org/">W3C /a></p>
+                <p>a href="https://www.google.com/">Google /a></p>
+
+                <h2>Relative URLs</h2>
+                <p> a href="html_images.asp">HTML Images /a></p>
+                <p> a href="/css/default.asp">CSS Tutorial /a></p>
+
+    <hr>
+        <h2>HTML Links - Use an Image as a Link</h2>
+            To use an image as a link, just put the "img" tag inside the "a" tag: <br>
+            "a href="default.asp">
+                "img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+                /a>"
+
+    <hr>
+        <h2>Link to an Email Address</h2>
+        Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email): <br>
+        "a href="mailto:someone@example.com">Send email /a>"
+
+    <hr>
+
+        <h2>Button as a Link</h2>
+        To use an HTML button as a link, you have to add some JavaScript code. <br>
+        JavaScript allows you to specify what happens at certain events, such as a click of a button: <br>
+        "button onclick="document.location='default.asp'">HTML Tutorial /button>""
+
+    <hr>
+
+        <h2> Link Titles</h2>
+        The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element. <br>
+        Example <br>
+        "a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial /a>""
+    </p>
+
+    <hr>
+    <hr>
+
+    <h1>HTML Links - Different Colors</h1>
+    <p>
+        HTML Link Colors <br>
+            By default, a link will appear like this (in all browsers):<br>
+
+            An unvisited link is underlined and blue<br>
+            A visited link is underlined and purple<br>
+            An active link is underlined and red<br>
+        <br><br>
+        In style tag : a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+          }
+          
+          a:visited {
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+          }
+          
+          a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+          }
+          
+          a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+          }
+    </p>
+    <hr>
+    <hr>
+    <h1>HTML Links - Create Bookmarks</h1>
+    <p>
+        Create a Bookmark in HTML <br><br>
+        Bookmarks can be useful if a web page is very long. <br>
+        To create a bookmark - first create the bookmark, then add a link to it.<br>
+        When the link is clicked, the page will scroll down or up to the location with the bookmark.<br>
+        Example<br>
+        First, use the id attribute to create a bookmark:<br>
+        "h2 id="C4">Chapter 4 /h2" <br><br>
+        Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page: <br>
+        Example<br>
+        "a href="#C4">Jump to Chapter 4 /a><br>
+        You can also add a link to a bookmark on another page:<br>
+        "a href="html_demo.html#C4">Jump to Chapter 4 /a><br>
+    </p>
+    <h3>Use the id attribute (id="value") to define bookmarks in a page.
+        Use the href attribute (href="#value") to link to the bookmark</h3>
+  </body>
+</html>
