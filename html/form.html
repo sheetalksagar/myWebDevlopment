@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+      <!-- 
+          method="GET" -> URL : data show
+          method="POST" -> Body : data hide
+       -->
+    <form action="welcome.html" method="post">
+      <label>Name : </label>
+      <input placeholder="username" type="text" name="uName" />
+      <br />
+      <label>Password : </label>
+      <input placeholder="password" type="password" name="pass" />
+      <br />
+      <label>D.O.B</label>
+      <input type="date" name="dob" />
+      <br />
+
+      <label>Have You ? :</label>
+      <input type="checkbox" name="car" />: Car
+      <input type="checkbox" name="bike" />: Bike
+      <br />
+      <label>Gen</label>
+      <input type="radio" name="gen" />: Male <input type="radio" name="gen" />:
+      Female <br>
+      <label>City : </label>
+      <!-- <input type="text" /> -->
+      <select name="city">
+        <option value="Pune">Pune</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Nagpur">Nagpur</option>
+        <option value="Nashik">Nashik</option>
+      </select>
+      <br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
